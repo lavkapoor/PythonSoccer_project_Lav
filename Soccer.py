@@ -54,8 +54,20 @@ class competition:
             if not (isinstance(item, tuple) and len(item) == 4):
                 raise ValueError(f"Onjuist wedstrijdresultaat-formaat: {item}")
 
-            team_a, team_b, score_a, score_b = item
-            team_a.Play(team_b, score_a, score_b)
+           
+            team_a_obj = self.get_team_by_name(item[0])
+            if team_a_obj is None:
+                team_a_obj = Team(item[0])
+                self.add_team(team_a_obj)
+
+            team_b_obj = self.get_team_by_name(item[1])
+            if team_b_obj is None:
+                team_b_obj = Team(item[1])
+                self.add_team(team_b_obj)
+
+            score_a= int(item[2])
+            score_b =  int(item[3])
+            team_a_obj.Play(team_b_obj, score_a, score_b)
     
    
     def display_table(self):
@@ -99,20 +111,11 @@ class competition:
     def process_match_data(self,inputfile,outputfile):
         match_data=self.read_match_data_file(inputfile)
         for match in match_data:
-            team_a_name,team_b_name,score_a,score_b=match
-            team_a=self.get_team_by_name(team_a_name)
-            team_b=self.get_team_by_name(team_b_name)
-            if team_a is None:
-                team_a=Team(team_a_name)
-                self.add_team(team_a)
-            if team_b is None:
-                team_b=Team(team_b_name)
-                self.add_team(team_b)
-            team_a.Play(team_b,int(score_a),int(score_b))
+            self.update_competion(match)
+            
         self.write_table(outputfile)
+        
 
     
-# main function 
 ucl=competition()
 ucl.process_match_data(r"match_data.txt","ranking.txt")
-
