@@ -1,0 +1,120 @@
+RSC Anderlecht - Club Brugge: 4 - 2
+Real Madrid - FC Barcelona: 2 - 1
+Atletico Madrid - Arsenal: 0 - 2
+Liverpool - Man City: 3 - 2
+Man United - Chelsea FC: 1 - 1
+PSV - Ajax: 0 - 3
+PSG - Marseille: 2 - 2
+FC Bayern Munchen - Dortmund: 2 - 0
+RSC Anderlecht - Real Madrid: 2 - 1
+Club Brugge - FC Barcelona: 2 - 2
+Atletico Madrid - Liverpool: 1 - 3
+Arsenal - Man United: 0 - 1
+Man City - Chelsea FC: 1 - 0
+PSV - PSG: 1 - 2
+Ajax - FC Bayern Munchen: 3 - 1
+Marseille - Dortmund: 0 - 0
+RSC Anderlecht - Atletico Madrid: 1 - 0
+Real Madrid - Liverpool: 2 - 2
+Club Brugge - Arsenal: 3 - 1
+FC Barcelona - Man City: 2 - 3
+Man United - PSV: 2 - 0
+Chelsea FC - Ajax: 0 - 2
+PSG - FC Bayern Munchen: 1 - 3
+Marseille - Dortmund: 1 - 1
+RSC Anderlecht - Liverpool: 2 - 1
+Atletico Madrid - Real Madrid: 1 - 2
+Club Brugge - Man United: 1 - 3
+Arsenal - Chelsea FC: 0 - 0
+FC Barcelona - PSV: 3 - 1
+Man City - PSG: 2 - 2
+Ajax - Marseille: 4 - 1
+FC Bayern Munchen - Dortmund: 2 - 2
+RSC Anderlecht - Arsenal: 3 - 2
+Club Brugge - Atletico Madrid: 2 - 1
+Real Madrid - Man City: 1 - 0
+Liverpool - Chelsea FC: 2 - 1
+Man United - PSG: 0 - 2
+PSV - Marseille: 1 - 3
+FC Barcelona - Ajax: 1 - 2
+FC Bayern Munchen - Dortmund: 2 - 1
+RSC Anderlecht - FC Barcelona: 4 - 1
+Real Madrid - Club Brugge: 3 - 1
+Atletico Madrid - Chelsea FC: 1 - 2
+Arsenal - Man United: 0 - 3
+Liverpool - PSV: 1 - 0
+Man City - Marseille: 3 - 3
+PSG - Ajax: 2 - 0
+FC Bayern Munchen - Dortmund: 1 - 1
+RSC Anderlecht - Man City: 1 - 0
+Real Madrid - Atletico Madrid: 1 - 1
+Club Brugge - Liverpool: 2 - 1
+Arsenal - PSV: 3 - 2
+Chelsea FC - PSG: 2 - 3
+FC Barcelona - Marseille: 4 - 0
+Ajax - FC Bayern Munchen: 1 - 1
+Dortmund - Man United: 0 - 2
+RSC Anderlecht - PSG: 5 - 3
+Real Madrid - Marseille: 2 - 0
+Club Brugge - FC Bayern Munchen: 1 - 2
+Atletico Madrid - Ajax: 2 - 2
+Arsenal - Dortmund: 1 - 0
+Liverpool - FC Barcelona: 2 - 3
+Man City - PSV: 2 - 1
+Chelsea FC - Man United: 1 - 1
+RSC Anderlecht - Ajax: 4 - 2
+Real Madrid - Chelsea FC: 3 - 1
+Club Brugge - Marseille: 1 - 0
+Atletico Madrid - FC Bayern Munchen: 2 - 1
+Arsenal - PSG: 2 - 2
+Liverpool - Man United: 1 - 0
+Man City - Dortmund: 3 - 2
+PSV - FC Barcelona: 1 - 3
+RSC Anderlecht - Marseille: 2 - 1
+Real Madrid - FC Bayern Munchen: 2 - 2
+Club Brugge - PSG: 1 - 3
+Atletico Madrid - PSV: 1 - 0
+Arsenal - Ajax: 0 - 1
+Chelsea FC - FC Barcelona: 2 - 3
+Liverpool - Dortmund: 1 - 1
+Man United - Man City: 2 - 0
+RSC Anderlecht - Dortmund: 2 - 1
+Real Madrid - PSV: 2 - 1
+Club Brugge - Ajax: 1 - 4
+Atletico Madrid - Marseille: 1 - 1
+Arsenal - FC Bayern Munchen: 1 - 3
+Liverpool - PSG: 2 - 2
+Man United - FC Barcelona: 1 - 2
+Man City - Chelsea FC: 0 - 1
+RSC Anderlecht - PSV: 3 - 2
+Real Madrid - Dortmund: 3 - 0
+Club Brugge - Man City: 1 - 1
+Atletico Madrid - Marseille: 2 - 0
+Arsenal - Liverpool: 0 - 1
+Chelsea FC - PSG: 2 - 1
+Ajax - FC Barcelona: 1 - 3
+FC Bayern Munchen - Man United: 1 - 2
+RSC Anderlecht - Chelsea FC: 1 - 0
+Real Madrid - Arsenal: 2 - 0
+Club Brugge - Marseille: 2 - 2
+Atletico Madrid - PSG: 1 - 3
+Liverpool - FC Bayern Munchen: 1 - 2
+Man United - Ajax: 2 - 2
+Man City - FC Barcelona: 1 - 1
+PSV - Dortmund: 1 - 0
+RSC Anderlecht - PSG: 2 - 0
+Real Madrid - Ajax: 1 - 3
+Club Brugge - Arsenal: 0 - 1
+Atletico Madrid - Man United: 0 - 1
+Chelsea FC - Marseille: 2 - 2
+Liverpool - PSV: 3 - 1
+FC Bayern Munchen - Dortmund: 2 - 2
+FC Barcelona - Man City: 2 - 1
+RSC Anderlecht - Ajax: 3 - 1
+Real Madrid - Dortmund: 3 - 1
+Club Brugge - Liverpool: 1 - 3
+Atletico Madrid - FC Bayern Munchen: 0 - 1
+Chelsea FC - Arsenal: 1 - 2
+Marseille - Man City: 1 - 3
+PSG - Man United: 0 - 2
+PSV - FC Barcelona: 0 - 1
