@@ -1,23 +1,53 @@
+
 class Team:
-    def __init__(self,name):
-        self.name=name
-        self.games_won=0
-        self.games_lost=0
-        self.games_drawn=0
-        self.goals_scored=0
-        self.goals_conceded=0
+    def __init__(self, name):
+        self.name = name
+        self.games_won = 0
+        self.games_lost = 0
+        self.games_drawn = 0
+        self.goals_scored = 0
+        self.goals_conceded = 0
+       
 
     def get_gamesplayed(self):
         return self.games_won + self.games_lost + self.games_drawn
 
     def get_points(self):
-        points=(self.games_won*3) + (self.games_drawn*1)
-        return points
+        return (self.games_won * 3) + (self.games_drawn * 1)
 
     def get_goaldifference(self):
         return self.goals_scored - self.goals_conceded
+
     def __repr__(self):
-        return f"Team({self.name}) - Wins: {self.games_won}, Losses: {self.games_lost}, Draws: {self.games_drawn}, Goals Scored: {self.goals_scored}, Goals Conceded: {self.goals_conceded}"
+        return (f"Team({self.name}) - Wins: {self.games_won}, Losses: {self.games_lost}, "
+                f"Draws: {self.games_drawn}, Goals Scored: {self.goals_scored}, "
+                f"Goals Conceded: {self.goals_conceded}")
+
+    # ⬇️ Plaats __lt__ hierbinnen
+    def __lt__(self, other):
+        """
+        Sorteercriteria (dalend):
+        - punten
+        - gewonnen wedstrijden
+        - doelsaldo
+        - doelpunten voor
+        - teamnaam (stijgend)
+        
+        Let op: deze __lt__ keert de conventie om zodat sorted(...) dalend sorteert op bovenstaande criteria.
+        """
+        if self.get_points() != other.get_points():
+            return self.get_points() > other.get_points()  # meer punten komt 'eerder' (dus self < other)
+
+        if self.games_won != other.games_won:
+            return self.games_won > other.games_won
+
+        if self.get_goaldifference() != other.get_goaldifference():
+            return self.get_goaldifference() > other.get_goaldifference()
+
+        if self.goals_scored != other.goals_scored:
+            return self.goals_scored > other.goals_scored
+
+        return self.name < other.name  # alfabetisch stijgend als ultieme tie-break
 
 
     def Play(self,opponent,goalsscored,goalsconceded):
@@ -71,18 +101,21 @@ class competition:
     
    
     def display_table(self):
+        sorted_teams = sorted(self.teams)
         rows=""
         header=f"{'Team':<20}| {'Played':<10}| {'Won':<10}| {'Drawn':<10}| {'Lost':<10}| {'GF':<10}| {'GA':<10}| {'GD':<10}| {'Points':<10}\n"
         rows+=header
-        for team in self.teams:
+        for team in self.sorted_teams:
             rows+=f"{team.name:<20}| {team.get_gamesplayed():<10}| {team.games_won:<10}| {team.games_drawn:<10}| {team.games_lost:<10}| {team.goals_scored:<10}| {team.goals_conceded:<10}| {team.get_goaldifference():<10}| {team.get_points():<10}\n"
         print(rows)
     
     def write_table(self,outputfile):
+        sorted_teams = sorted(self.teams)
+
         rows=""
         header=f"{'Team':<20}| {'Played':<10}| {'Won':<10}| {'Drawn':<10}| {'Lost':<10}| {'GF':<10}| {'GA':<10}| {'GD':<10}| {'Points':<10}\n"
         rows+=header
-        for team in self.teams:
+        for team in sorted_teams:
             rows+=f"{team.name:<20}| {team.get_gamesplayed():<10}| {team.games_won:<10}| {team.games_drawn:<10}| {team.games_lost:<10}| {team.goals_scored:<10}| {team.goals_conceded:<10}| {team.get_goaldifference():<10}| {team.get_points():<10}\n"
         with open(outputfile,'w',encoding="utf-8") as f:
           f.write(rows)
@@ -119,3 +152,5 @@ class competition:
     
 ucl=competition()
 ucl.process_match_data(r"match_data.txt","ranking.txt")
+ucl.sorted_teams = sorted(ucl.teams)
+ucl.display_table()
